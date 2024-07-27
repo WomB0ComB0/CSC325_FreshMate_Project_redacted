@@ -1,0 +1,6 @@
+{
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.checkstyle.configuration": "${workspaceFolder}\\check-style.xml",
+  "java.checkstyle.version": "10.17.0",
+  "java.configuration.updateBuildConfiguration": "interactive"
+}

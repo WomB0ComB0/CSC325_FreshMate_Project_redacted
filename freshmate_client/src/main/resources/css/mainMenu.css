@@ -1,0 +1,117 @@
+#userPhoto {
+    -fx-background-radius: 50%; /* Ensure it's circular */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 0, 2); /* Optional: Drop shadow */
+}
+
+/* Styling for the buttons */
+.button {
+    -fx-background-color: #1899D6; /* White background */
+    -fx-border-radius: 24px; /* Rounded corners */
+    -fx-border-style: none; /* No border */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 5, 0.2, 0, 2);
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-family: "din-round", sans-serif; /* Font family */
+    -fx-font-weight: 500; /* Font weight */
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-padding: 2px 24px; /* Padding */
+    -fx-text-align: center; /* Center text alignment */
+    -fx-text-transform: none; /* No text transform */
+    -fx-letter-spacing: 0.25px; /* Letter spacing */
+    -fx-cursor: hand; /* Pointer cursor */
+    -fx-transition: all 0.3s ease; /* Smooth transition */
+    -fx-background-radius: 20px; /* Rounded background */
+    -fx-height: 48px;
+    -fx-width: auto; /* Width adjusted based on content */
+}
+
+/* Styling for the hover state */
+.button:hover {
+    -fx-background-color: #137aab; /* Light background on hover */
+    -fx-text-fill: #174ea6; /* Dark text color on hover */
+}
+
+/* Styling for the pressed state */
+.button:pressed {
+    -fx-background-color: #2ecc71; /* Green background when pressed */
+    /*-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0.5, 0, 0);*/
+}
+
+/* Styling for the focused state */
+.button:focused {
+    -fx-background-color: #2ecc71; /* Keep the green background */
+    -fx-border-color: transparent; /* No border */
+    -fx-border-width: 0; /* No border width */
+}
+
+
+.stack-pane {
+    /*-fx-background-color: transparent;*/
+    -fx-background-color: blue;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-style: none;
+}
+
+/* Style for category labels */
+.category-label {
+    -fx-font-size: 20px;
+    -fx-font-family: 'Inter', sans-serif; /* Ensure the Inter font is available in your project */
+    -fx-padding: 10px 20px;
+
+}
+#fridgeScrollPane .scroll-bar:horizontal,
+#freezerScrollPane .scroll-bar:horizontal,
+#pantryScrollPane .scroll-bar:horizontal {
+    -fx-background-color: transparent; /*Transparent background */
+    -fx-opacity: 0; /* Make the scroll bar arrows invisible */
+}
+
+#fridgeScrollPane .scroll-bar:vertical,
+#freezerScrollPane .scroll-bar:vertical,
+#pantryScrollPane .scroll-bar:vertical {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-opacity: 0; /* Make the scroll bar arrows invisible */
+}
+
+/* Style for the ScrollPane */
+.item-scroll-pane {
+    -fx-background-color: #e1e1e1; /* Background color for the ScrollPane */
+    -fx-background-radius: 10px;   /* Border radius for the ScrollPane */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 5, 0.2, 0, 2);
+    -fx-vbar-policy: never; /* Hides the vertical scrollbar */
+    -fx-hbar-policy: always;
+}
+
+/* Style for the content inside the ScrollPane */
+.item-scroll-pane .viewport {
+    -fx-background-color: #e1e1e1; /* Background color for the viewport content */
+    -fx-background-radius: 10px;   /* Border radius for the viewport content */
+}
+
+/* Style for the horizontal scroll bar */
+.item-scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent; /*Transparent background */
+    -fx-opacity: 0; /* Make the scroll bar arrows invisible */
+}
+
+.item-scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: #888; /* Color of the scroll thumb */
+    -fx-background-radius: 5px; /* Rounded corners for thumb */
+}
+
+.item-scroll-pane .scroll-bar:horizontal .track {
+    -fx-background-color: #888;
+    -fx-background-radius: 5px; /* Rounded corners for track */
+}
+
+.vbox-spacing {
+    -fx-margin: 10px; /* Adjust the margin as needed */
+}
+
+#userProfilePic {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0.5, 0, 0);
+    -fx-border-color: transparent; /* No border */
+    -fx-padding: 5; /* Optional padding */
+}

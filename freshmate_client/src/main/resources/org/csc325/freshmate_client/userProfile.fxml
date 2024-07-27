@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0"
+   xmlns="http://javafx.com/javafx/22"
+   xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.csc325.freshmate_client.controller.userProfileController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: white;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="32.0" prefWidth="335.0">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="29.0" onMouseClicked="#backToMainMenu" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/back_arrow.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="7.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <ImageView fx:id="userProfilePic" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                  <Hyperlink fx:id="changeProfilePic" onAction="#openFileChooser" text="Change profile image">
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+               </children>
+            </VBox>
+            <VBox prefHeight="401.0" prefWidth="335.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="62.0" prefWidth="335.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="37.21630859375" />
+                        <Pane prefHeight="62.0" prefWidth="34.0" />
+                        <Label fx:id="usersNameLabel" prefHeight="17.0" prefWidth="161.0">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="62.0" prefWidth="335.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="61.21630859375">
+                           <HBox.margin>
+                              <Insets right="11.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Pane prefHeight="62.0" prefWidth="0.0" />
+                        <Label fx:id="usernameLabel" prefHeight="17.0" prefWidth="161.0">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="62.0" prefWidth="335.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+                        <Pane prefHeight="62.0" prefWidth="39.0" />
+                        <Label fx:id="emailAddressLabel" prefHeight="17.0" prefWidth="161.0">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="62.0" prefWidth="335.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" wrappingWidth="84.21630859375">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                        <Pane prefHeight="62.0" prefWidth="0.0">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Pane>
+                        <Label fx:id="phoneNumberLabel" prefHeight="17.0" prefWidth="161.0" />
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="87.0" prefWidth="335.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Save Changes" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

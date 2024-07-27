@@ -1,0 +1,141 @@
+.
+├── README.md
+├── freshmate_api
+│   ├── HELP.md
+│   ├── mvnw
+│   ├── mvnw.cmd
+│   ├── pom.xml
+│   └── src
+│       ├── main
+│       │   ├── java
+│       │   │   └── org
+│       │   │       └── csc325
+│       │   │           └── freshmate_api
+│       │   │               ├── FreshmateApiApplication.java
+│       │   │               ├── config
+│       │   │               │   ├── ApplicationConfiguration.java
+│       │   │               │   ├── JwtAuthenticationFilter.java
+│       │   │               │   └── SecurityConfiguration.java
+│       │   │               ├── controller
+│       │   │               │   ├── AuthenticationController.java
+│       │   │               │   └── UserController.java
+│       │   │               ├── dtos
+│       │   │               │   ├── LoginUserDto.java
+│       │   │               │   └── RegisterUserDto.java
+│       │   │               ├── entities
+│       │   │               │   └── User.java
+│       │   │               ├── exceptions
+│       │   │               │   └── GlobalExceptionHandler.java
+│       │   │               ├── implementations
+│       │   │               │   └── GroceryServiceImpl.java
+│       │   │               ├── model
+│       │   │               │   ├── Grocery.java
+│       │   │               │   ├── GroceryFilter.java
+│       │   │               │   └── Item.java
+│       │   │               ├── repository
+│       │   │               │   ├── GroceryRepository.java
+│       │   │               │   └── UserRepository.java
+│       │   │               ├── responses
+│       │   │               │   └── LoginResponse.java
+│       │   │               ├── service
+│       │   │               │   ├── AuthenticationService.java
+│       │   │               │   ├── GroceryService.java
+│       │   │               │   ├── JwtService.java
+│       │   │               │   └── UserService.java
+│       │   │               ├── util
+│       │   │               │   └── JsonUtils.java
+│       │   │               └── web
+│       │   │                   └── GroceryEndpoint.java
+│       │   └── resources
+│       │       ├── application.properties
+│       │       ├── db
+│       │       │   └── migration
+│       │       ├── static
+│       │       └── templates
+│       └── test
+│           ├── java
+│           │   └── org
+│           │       └── csc325
+│           │           └── freshmate_api
+│           │               ├── FreshmateApiApplicationTests.java
+│           │               ├── controller
+│           │               ├── repository
+│           │               ├── service
+│           │               └── {controller,repository,service}
+│           └── resources
+│               └── application-test.properties
+├── freshmate_client
+│   ├── README.md
+│   ├── build.gradle
+│   ├── gradle
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── lib
+│   ├── mvnw
+│   ├── mvnw.cmd
+│   ├── pom.xml
+│   ├── src
+│   │   └── main
+│   │       ├── java
+│   │       │   ├── module-info.java
+│   │       │   └── org
+│   │       │       └── csc325
+│   │       │           └── freshmate_client
+│   │       │               ├── HelloApplication.java
+│   │       │               ├── controller
+│   │       │               │   ├── logInPageController.java
+│   │       │               │   └── signUpPageController.java
+│   │       │               ├── model
+│   │       │               │   ├── FireStoreContext.java
+│   │       │               │   └── User.java
+│   │       │               ├── repository
+│   │       │               │   └── UserDAO.java
+│   │       │               ├── view
+│   │       │               └── viewmodel
+│   │       │                   └── UserViewModel.java
+│   │       └── resources
+│   │           ├── application.properties
+│   │           ├── css
+│   │           ├── images
+│   │           │   └── Logo.png
+│   │           ├── json
+│   │           │   └── env.json
+│   │           └── org
+│   │               └── csc325
+│   │                   └── freshmate_client
+│   │                       ├── logInPage.fxml
+│   │                       └── signUpPage.fxml
+│   └── target
+│       ├── classes
+│       │   ├── application.properties
+│       │   ├── css
+│       │   ├── images
+│       │   │   └── Logo.png
+│       │   ├── module-info.class
+│       │   └── org
+│       │       └── csc325
+│       │           └── freshmate_client
+│       │               ├── HelloApplication.class
+│       │               ├── controller
+│       │               │   ├── logInPageController.class
+│       │               │   └── signUpPageController.class
+│       │               ├── logInPage.fxml
+│       │               └── signUpPage.fxml
+│       ├── generated-sources
+│       │   └── annotations
+│       └── maven-status
+│           └── maven-compiler-plugin
+│               └── compile
+│                   └── default-compile
+│                       ├── createdFiles.lst
+│                       └── inputFiles.lst
+├── setup-api.sh
+├── setup-client.sh
+├── setup.sh
+├── tokens.json
+└── tree.txt
+
+70 directories, 68 files

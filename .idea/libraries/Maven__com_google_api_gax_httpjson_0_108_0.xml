@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: com.google.api:gax-httpjson:0.108.0" type="java-imported">
+    <properties groupId="com.google.api" artifactId="gax-httpjson" version="0.108.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/api/gax-httpjson/0.108.0/gax-httpjson-0.108.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/api/gax-httpjson/0.108.0/gax-httpjson-0.108.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/api/gax-httpjson/0.108.0/gax-httpjson-0.108.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
